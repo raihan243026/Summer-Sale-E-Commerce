@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale E-Commerce</title>
+    <!-- Load Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Load Font Awesome 6 (for stars) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        xintegrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <!-- Sale Banner Section -->
+        <section class="hero-section mb-5" style="background-color: blanchedalmond;">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-secondary fw-bold mb-1">---Sale Fever---</p>
+                    <h2 class="display-5 fw-bold mb-3" style="color: #495057;">
+                        Purchase TK 200 or <br> above & get <span class="fw-bold text-danger">20% off</span>
+                    </h2>
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+                        <p class="text-offer-dark me-3 small fw-medium mb-0">Use promo code:</p>
+                        <button class="btn btn-sm sale-pink px-4" id="promo-code-btn">SELL200</button>
+                    </div>
+                    <div id="copy-message" class="text-success small fw-bold" style="opacity: 0;">Code copied!</div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="./assets/Summer 1.png"
+                        alt="Summer Sale Banner" class="img-fluid rounded-circle shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <div class="row g-4">
+            <section class="col-lg-8">
+                <h3 class="mb-4">Super Shop</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    
+                    <!-- Item 1: Chamos Set -->
+                    <div class="col">
+                        <div class="card product-card" data-name="Chamos Set" data-price="500">
+                            <div class="card-img-container">
+                                <img src="./assets/prod1.png" class="card-img-top" alt="Chamos Set">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Chamos Set</h5>
+                                <p class="card-text">500 TK</p>
+                                <div class="ratings text-warning mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <button type="button" class="btn btn-buy-now buy-now-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: K. Accessories -->
+                    <div class="col">
+                        <div class="card product-card" data-name="K. Accessories" data-price="600">
+                            <div class="card-img-container">
+                                <img src="./assets/prod2.png" class="card-img-top" alt="K. Accessories">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">K. Accessories</h5>
+                                <p class="card-text">600 TK</p>
+                                <div class="ratings text-warning mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <button type="button" class="btn btn-buy-now buy-now-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Home Cooker -->
+                    <div class="col">
+                        <div class="card product-card" data-name="Home Cooker" data-price="600">
+                            <div class="card-img-container">
+                                <img src="./assets/prod3.png" class="card-img-top" alt="Home Cooker">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Home Cooker</h5>
+                                <p class="card-text">600 TK</p>
+                                <div class="ratings text-warning mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                </div>
+                                <button type="button" class="btn btn-buy-now buy-now-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Cap -->
+                    <div class="col">
+                        <div class="card product-card" data-name="Cap" data-price="800">
+                            <div class="card-img-container">
+                                <img src="./assets/prod4.png" class="card-img-top" alt="Cap">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Cap</h5>
+                                <p class="card-text">800 TK</p>
+                                <div class="ratings text-warning mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                </div>
+                                <button type="button" class="btn btn-buy-now buy-now-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Dress -->
+                    <div class="col">
+                        <div class="card product-card" data-name="Dress" data-price="700">
+                            <div class="card-img-container">
+                                <img src="./assets/prod5.png" class="card-img-top" alt="Dress">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dress</h5>
+                                <p class="card-text">700 TK</p>
+                                <div class="ratings text-warning mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <button type="button" class="btn btn-buy-now buy-now-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Shoes -->
+                    <div class="col">
+                        <div class="card product-card" data-name="Shoes" data-price="900">
+                            <div class="card-img-container">
+                                <img src="./assets/prod6.png" class="card-img-top" alt="Shoes">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Shoes</h5>
+                                <p class="card-text">900 TK</p>
+                                <div class="ratings text-warning mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <button type="button" class="btn btn-buy-now buy-now-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Billing Section -->
+            <section class="col-lg-4">
+                <div class="billing-section">
+                    <h4 class="mb-3">Have coupon?</h4>
+                    <div class="input-group mb-4">
+                        <input type="text" id="coupon-code" class="form-control" placeholder="Enter your coupon code">
+                        <button class="btn sale-pink" type="button" id="apply-coupon-btn">Apply</button>
+                    </div>
+                    <div id="coupon-message" class="mb-3 small fw-bold"></div>
+                    <!-- Item List in Cart -->
+                    <h5 class="mb-2">Selected Items:</h5>
+                    <ul id="cart-items-list" class="list-group list-group-flush mb-4 small">
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-1 text-muted" id="cart-empty-message">
+                            Cart is empty.
+                        </li>
+                    </ul>
+
+                    <!-- Price Breakdown -->
+                    <div class="card p-3" style="background-color: #f1f1f1;">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-1">Total Price:</p>
+                            <p class="mb-1"><span id="total-price">0.00</span> TK</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-1 text-success">Discount:</p>
+                            <p class="mb-1 text-success">-<span id="discount-amount">0.00</span> TK</p>
+                        </div>
+                        <hr class="my-2">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="fw-bold">Final Total:</h5>
+                            <h5 class="fw-bold"><span id="final-total">0.00</span> TK</h5>
+                        </div>
+                        
+                        <button type="button" id="make-purchase-btn" disabled
+                            class="btn btn-warning mt-3 fw-bold" style="padding: 0.75rem 1.5rem;">
+                            Make Purchase
+                        </button>
+                        <div id="purchase-message" class="text-center text-success small mt-2 fw-bold" style="opacity: 0;"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript Link -->
+    <script src="main.js"></script>
+</body>
+
+</html>
